@@ -1,0 +1,379 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-family: "Public Sans";
+  overflow-x: hidden;
+}
+nav {
+  display: flex;
+  place-content: space-around;
+  place-items: center;
+  background: #fff;
+  height: 4em;
+  position: relative;
+  z-index: 1;
+}
+.humburger {
+  display: none;
+}
+.close {
+  display: none;
+}
+.nav-list {
+  display: flex;
+  color: hsl(234, 8%, 52%);
+  font-weight: 300;
+  max-width: 20%;
+  gap: 1.7em;
+  place-content: center;
+}
+nav img {
+  height: 1.3em;
+}
+.nav-button {
+  color: hsl(0, 0%, 100%);
+  padding: 1em 2.3em;
+  font-weight: 700;
+  border: none;
+  border-radius: 2em;
+  background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+}
+#mobile-under-img {
+  display: none;
+}
+#mobile-top-img {
+  display: none;
+}
+.main-upper {
+  display: flex;
+  height: 90vh;
+  background-color: hsl(0, 0%, 98%);
+}
+.main-upper-text {
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  max-width: 55%;
+  margin-left: 15%;
+}
+.main-upper-text-wrapper {
+  display: flex;
+}
+.main-button {
+  margin-top: 5%;
+  width: 10rem;
+}
+.main-upper-text h1 {
+  font-weight: 300;
+  font-size: 2.4em;
+}
+.main-upper-text p {
+  font-weight: 200;
+  margin-top: -0.3em;
+  color: hsl(234, 8%, 52%);
+}
+.under-img {
+  position: absolute;
+  max-height: 180%;
+  max-width: 78%;
+  top: -8.9rem;
+  left: 39rem;
+}
+#top-img {
+  position: relative;
+  max-width: 117%;
+  top: -5rem;
+  left: 1rem;
+}
+
+.main-middle {
+  min-height: 100vh;
+  background: hsl(220, 16%, 96%);
+}
+.card {
+  width: 15rem;
+}
+.card p {
+  font-weight: 150;
+  font-size: 0.9em;
+  margin-top: -0.3em;
+  color: hsl(234, 8%, 52%);
+  line-height: 155%;
+}
+.card h4 {
+  font-weight: 300;
+  font-size: 1.2em;
+  margin-bottom: 10%;
+}
+.main-middle-card {
+  display: flex;
+  flex-wrap: wrap;
+  place-content: space-around;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 6%;
+}
+.main-middle-text {
+  width: 50%;
+  margin-left: 10%;
+}
+
+.main-middle-text h2 {
+  margin-top: 0;
+  padding-top: 15%;
+  font-weight: 300;
+  font-size: 2em;
+}
+.main-middle-text p {
+  font-weight: 200;
+  margin-top: -0.3em;
+  color: hsl(234, 8%, 52%);
+}
+
+.main-bottom {
+  min-height: 100vh;
+  background-color: hsl(0, 0%, 98%);
+}
+.main-bottom-text {
+  margin-left: 10%;
+}
+.main-bottom-text h2 {
+  margin-top: 0;
+  padding-top: 6%;
+  font-weight: 300;
+  font-size: 2em;
+}
+.main-bottom-card {
+  display: flex;
+  flex-wrap: wrap;
+  place-content: center;
+  height: 55%;
+  gap: 1.5em;
+  margin-left: 5%;
+  margin-right: 4%;
+  margin-top: -2%;
+  padding: 5%;
+}
+.img-wrapper {
+  width: 100%;
+}
+.img-wrapper img {
+  width: 100%;
+  border-radius: 2% 2% 0 0;
+  -webkit-border-radius: 2% 2% 0 0;
+  -moz-border-radius: 2% 2% 0 0;
+  -ms-border-radius: 2% 2% 0 0;
+  -o-border-radius: 2% 2% 0 0;
+}
+.text-wrapper {
+  padding: 8%;
+}
+.bottom-card {
+  width: 15rem;
+  background-color: white;
+  height: 110%;
+  border-radius: 2%;
+  -webkit-border-radius: 2%;
+  -moz-border-radius: 2%;
+  -ms-border-radius: 2%;
+  -o-border-radius: 2%;
+}
+.bottom-card p {
+  font-weight: 150;
+  font-size: 0.7em;
+  margin-top: -0.3em;
+  color: hsl(234, 8%, 52%);
+  line-height: 150%;
+}
+.bottom-card h4 {
+  font-weight: 300;
+  font-size: 1em;
+  margin-bottom: 8%;
+  margin-top: 8%;
+}
+#small {
+  font-size: 0.6em;
+}
+
+footer {
+  min-height: 27vh;
+  background-color: hsl(233, 26%, 24%);
+  color: hsl(0, 0%, 98%);
+}
+.foot {
+  height: 100%;
+  display: flex;
+  margin-left: 10%;
+}
+.us {
+  display: flex;
+  flex-direction: column;
+  margin-right: 9%;
+  margin-top: 1.5%;
+}
+.policy {
+  display: flex;
+  flex-direction: column;
+  margin-right: 27%;
+  margin-top: 1.5%;
+}
+.images {
+  display: flex;
+  flex-direction: column;
+  place-content: space-around;
+  margin-right: 11%;
+}
+.corner {
+  margin-top: 3%;
+  text-align: end;
+}
+.corner p {
+  font-weight: 150;
+  font-size: 0.8em;
+  margin-top: 11%;
+  color: hsl(234, 8%, 52%);
+  line-height: 150%;
+}
+.policy p,
+.us p {
+  font-weight: 200;
+  font-size: 0.9em;
+  margin-bottom: 0.8%;
+  color: hsl(234, 8%, 72%);
+}
+.socials img {
+  margin-right: 2.8%;
+}
+
+@media (max-width: 900px) {
+  nav {
+    font-size: 14px;
+  }
+}
+@media (max-width: 700px) {
+  nav {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 580px) {
+  nav {
+    place-content: space-between;
+    padding: 0.5em 3em;
+  }
+  #mobile-under-img {
+    display: block;
+    width: 100%;
+    height: 23em;
+    position: absolute;
+  }
+  #top-img {
+    display: none;
+  }
+  #mobile-top-img {
+    position: relative;
+    max-width: 86%;
+    top: -8.1em;
+    left: 2em;
+    display: block;
+  }
+  .nav-list {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    background-color: #fff;
+    top: 4.5em;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 1.5em 11.3em;
+    border-radius: 0.4em;
+  }
+  .view {
+    display: block;
+  }
+  .hide {
+    display: none;
+  }
+  .nav-list p {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+  }
+  nav .nav-button {
+    display: none;
+  }
+  .main-upper {
+    display: block;
+    min-height: 90vh;
+  }
+  .under-img {
+    display: none;
+  }
+  .main-upper-text {
+    margin-top: -8em;
+    max-width: 100%;
+    padding-bottom: 5em;
+    place-items: center;
+  }
+  .main-upper-text h1 {
+    text-align: center;
+    margin-right: 1.5em;
+  }
+  .main-upper-text p {
+    margin-right: 1.7em;
+  }
+  .main-middle {
+    text-align: center;
+  }
+  .main-middle-text {
+    width: 80%;
+  }
+  .main-middle-text h2 {
+    margin: 0 1em;
+    padding-bottom: 1em;
+  }
+  .card {
+    width: 100%;
+  }
+  .main-bottom-text {
+    text-align: center;
+    margin: 0;
+    padding-top: 3em;
+  }
+  .bottom-card {
+    width: 100%;
+  }
+  .foot {
+    flex-direction: column;
+    text-align: center;
+    place-items: center;
+    margin: 0;
+  }
+  .images {
+    padding-top: 2em;
+    margin: 0;
+    place-items: center;
+    gap: 1.5em;
+  }
+  .socials {
+    width: 150%;
+  }
+  .socials img {
+    margin-right: 3%;
+    margin-left: 3%;
+  }
+  .us {
+    margin: 0;
+  }
+  .policy {
+    margin: 0;
+  }
+  .corner {
+    margin: 0;
+    text-align: center;
+    margin-top: 2em;
+    padding-bottom: 2em;
+  }
+}
