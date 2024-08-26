@@ -1,0 +1,217 @@
+ @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro&display=swap');
+
+*{
+      margin: 0;
+      padding: 0;
+}
+.head {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1;
+}
+.logo {
+      color: #fff;
+      text-transform: uppercase;
+      display: flex;
+      justify-content: flex-start;
+      padding: 1rem ;
+}
+.menu {
+      margin-left: 1rem;
+      margin-top: 2rem;
+      padding-bottom: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      justify-content: center;
+      align-items: flex-start;
+      max-width: 20%;
+}
+.menu a{
+      font-size: 1rem;
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+}
+.menu a:hover,.menu .active{
+      color: aqua;
+}
+.home {
+      min-height: 100vh;
+      background-image: linear-gradient(90deg, #031540 85%, #fff 15%);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+}
+.home-content {
+      margin-top:4rem;
+      color: white;
+      padding-left: .6rem;
+      max-width: 23rem;
+      align-self:flex-start;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+}
+.home-img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 15rem;
+      width: 15rem;
+      background-color: #031540;
+      align-self: center;
+      position: relative;
+      top: -1rem;
+      left: 3rem;
+      border: 1rem solid #fff;
+      outline: 1.5rem solid #031540;
+      border-radius: 50%;
+}
+.home-img img{
+  
+  width: 14rem;
+  height: 14rem;
+  border-radius: 50%;
+}
+.home-content h1 {
+      font-size: 1.7rem;
+}
+.home-content h2 {
+      font-size: 1.5rem;
+      color: #00abf0;
+}
+.button {
+      font-size: 1rem;
+      text-decoration: none;
+      background-color: #00abf0;
+      padding: .6rem 1em;
+      margin-top: 1.5rem;
+      border-radius: 1rem;
+      max-width: 6.5rem;
+      color: #fff;
+      font-weight: bold;
+      box-shadow: 0 0 .6rem #00abf0;
+      transition: .6s;
+}
+.button:hover {
+      color: #000;
+      box-shadow: none;
+}
+@media (min-width:35em){
+      .head {
+            display: flex;
+            justify-content: space-between;
+      }
+      .logo {
+            color: #000;
+            display: flex;
+            max-width: 35%;
+      }
+      .logo h1 {
+            font-size: 3rem;
+      }
+      .menu {
+            margin-right: 2rem;
+            flex-direction: row;
+            gap: 2rem;
+            justify-content: end;
+      }
+      .menu a {
+            font-size: 1.5rem;
+            font-weight: 600;
+      }
+      .home {
+            background-image: linear-gradient(-90deg, #031540 65%, #fff 35%);
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 3.5rem;
+            justify-content: space-around;
+            padding: 0 3%;
+      }
+      .home-img img{
+          width: 19rem;
+          height: 19rem;
+}
+      .home-content {
+            text-align: right;
+            color: white;
+            align-self:center;
+            justify-content: end;
+            display: flex;
+            flex-direction: column;
+            max-width: none;
+            gap: 1rem;
+      }
+      .home-content h1 {
+            font-size: 2.5rem;
+      }
+      .home-content h2 {
+            font-size: 2rem;
+      }
+      .home-content p {
+            max-width: 32rem;
+      }
+      .home-img {
+            height: 20rem;
+            width: 20rem;
+      }
+      .button {
+            font-size: 1.5rem;
+            align-self: end;
+            padding: 1rem 2rem;
+            letter-spacing: 1px;
+            max-width: none;
+      }
+}
+@media (orientation:landscape){
+  .home-img {
+            height: 10rem;
+            width: 10rem;
+      }
+  .home-img img{
+            height: 9rem;
+            width: 9rem;
+      }
+  .logo h1 {
+            font-size: 1rem;
+      }
+      .menu {
+            gap: 1rem;
+      }
+      .menu a {
+            font-size: .8rem;
+            font-weight: 300;
+      }
+      .home {
+            gap: 10rem;
+            justify-content: end;
+      }
+      .home-content {
+            align-items: end;
+            gap: .5rem;
+      }
+      .home-content h1 {
+            font-size: 1.5rem;
+      }
+      .home-content h2 {
+            font-size: 1rem;
+      }
+      .home-content p {
+          max-width: 20rem;
+           font-size: .5rem;
+      }
+      .button {
+            font-size: .8rem;
+            padding: .6rem 1rem;
+      }
+      .home-img {
+      border: .5rem solid #fff;
+      outline: .8rem solid #031540;
+      border-radius: 50%;
+}
+}
